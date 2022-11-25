@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TouchUp</title>
+
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar  fixed-top ">
+        <div class="container-fluid">
+          <button class="navbar-toggler d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="./index.html">
+            <img src="./home/logo.jpg" alt="">
+          </a>
+          <div class="navbar-menu d-none d-sm-block">
+            <a href="" class="navbar-home">Home</a>
+            <a href="" class="navbar-shop">shop</a>
+            <a href="" class="navbar-about">about</a>
+            <a href="" class="navbar-contact">contact</a>
+          </div>
+          <div class="navbar-icon d-flex g-10">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-handbag"></i>
+            <a href="#" class="login d-none d-md-block">Login</a>
+
+          </div>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./home/logo.jpg" alt="">
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide mt-70 d-none d-xl-block" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./home/banner 1.jpg" class="d-block w-100" alt="...">
+          <div class="title-banner">
+            <h3 class="h3-banner">Face perfection</h3>
+            <p class="p-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div class="btn-banner ">
+              <a href="#" class="btn-read-more">Read more</a>
+              <a href="#" class="btn-appoin">Appointment</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="./home/banner 2.jpg" class="d-block w-100" alt="...">
+          <div class="title-banner">
+            <h3 class="h3-banner">Defining Beauty </h3>
+            <p class="p-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div class="btn-banner ">
+              <a href="#" class="btn-read-more">Read more</a>
+              <a href="#" class="btn-appoin">Appointment</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./home/banner 3.jpg" class="d-block w-100" alt="...">
+          <div class="title-banner">
+            <h3 class="h3-banner">Aesthetic Touch</h3>
+            <p class="p-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div class="btn-banner ">
+              <a href="#" class="btn-read-more">Read more</a>
+              <a href="#" class="btn-appoin">Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <figure class="mobile-banner d-xl-none">
+      <div class="title-banner">
+        <h3 class="h3-banner">Face perfection</h3>
+        <p class="p-banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <div class="btn-banner ">
+          <a href="#" class="btn-read-more">Read more</a>
+          <a href="#" class="btn-appoin">Appointment</a>
+        </div>
+      </div>
+    </figure>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 p-0">
+          <img src="./public/home/element1.jpg" alt="" class="w-100">
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3 p-0 position-relative ">
+          <img src="./public/home/element5.jpg" alt="" class="w-100">
+          <div class="position-absolute title-element d-flex flex-column gap-3">
+            <h3 class="h3-el1">Lips</h3>
+
+            <div class="span-el1"></div>
+
+            <p class="p-el1">Lorem ipsum dolor sit amet,
+              <br>
+            adipisicing elit eius mod tem
+          </p>
+
+          <div class="text-center"><a href="#" class="btn-el1">Read More</a></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3 p-0">
+          <img src="./public/home/element2.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 p-0 position-relative ">
+          <img src="./public/home/element6.jpg" alt="" class="w-100">
+          <div class="position-absolute title-element d-flex flex-column gap-3">
+            <h3 class="h3-el2">
+              Botox 
+            </h3>
+
+            <div class="span-el2"></div>
+
+            <p class="p-el2">Lorem ipsum dolor sit amet,
+              <br>
+            adipisicing elit eius mod tem
+          </p>
+
+          <div class="text-center"><a href="#" class="btn-el2">Read More</a></div>
+          </div>
+        </div>
+
+        <div class="d-none d-md-block col-md-6 col-xl-3 p-0 position-relative ">
+          <img src="./public/home/element7.jpg" alt="" class="w-100">
+          <div class="position-absolute title-element d-flex flex-column gap-3">
+            <h3 class="h3-el2">
+              Breast implants 
+            </h3>
+
+            <div class="span-el2"></div>
+
+            <p class="p-el2">Lorem ipsum dolor sit amet,
+              <br>
+            adipisicing elit eius mod tem
+          </p>
+
+          <div class="text-center"><a href="#" class="btn-el2">Read More</a></div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-md-6 col-xl-3 p-0">
+          <img src="./public/home/element3.jpg" alt="" class="w-100">
+        </div>
+        <div class="d-none d-md-block col-md-6 col-xl-3 p-0 position-relative ">
+          <img src="./public/home/element8.jpg" alt="" class="w-100">
+          <div class="position-absolute title-element d-flex flex-column gap-3">
+            <h3 class="h3-el1">
+              Radiesse 
+            </h3>
+
+            <div class="span-el1"></div>
+
+            <p class="p-el1">Lorem ipsum dolor sit amet,
+              <br>
+            adipisicing elit eius mod tem
+          </p>
+
+          <div class="text-center"><a href="#" class="btn-el1">Read More</a></div>
+          </div>
+        </div>
+        <div class="d-none d-md-block col-md-6 col-xl-3 p-0">
+          <img src="./public/home/element4.jpg" alt="" class="w-100">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3 class="h3-treatment">
+            Choose a treatment
+          </h3>
+          <div class="span-el2 mb-5"></div>
+          <div class="d-flex flex-wrap">
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment1.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Face lift
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment2.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Implant
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment3.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Fillers
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment4.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Rhinoplasty
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment5.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Eyes & eyelids
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center gap-3 border-treatment p-5">
+              <img src="./public/home/treatment6.jpg" alt="">
+              <div class="treatment-content d-flex flex-column justify-content-center">
+                <h4 class="title-treatment">
+                  Lips
+                </h4>
+                <p class="text-treatment">
+                  Lorem ipsum dolor sit amet, adipisicing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid pt-140">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <img src="./public/home/image 127.jpg" alt="" class="w-100">
+        </div>
+        <div class="col-12 col-md-6 pl-38">
+          <h2 class="title-breast">Breast implant safety </h2>
+          <div class="d-flex">
+            <div class="col-12 col-sm-6 col-xl-6 col-xxl-4 d-flex flex-column">
+              <div class="d-flex gap-3 ">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Lorem ipsum dolor</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Consectetur adipiscing</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Eiusmod tempor sed</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Dolore magna aliqua</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Excepteur sint ocsecat</p>
+              </div>
+            </div>
+            <div class="d-none d-sm-block col-sm-6 col-xl-6 col-xxl-4 d-flex flex-column">
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Sed ut perspiciatis</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Duis aute irure dolor</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Neque porro quisquam</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Lorem ipsum dolor</p>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-check-lg icon-breast"></i>
+                <p class="text-breast">Consectetur adipiscing</p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-12 me-3">
+            <h3 class="h3-breast col-12 " >HAVE A QUESTION ABOUT THIS?</h3>
+            <div class="d-flex gap-3 col-12 col-xl-8  flex-column flex-sm-row flex-wrap">
+              <div class="col-12 col-sm-7 col-md-12 col-xl-7"><input type="text" name="" id="" placeholder="Type question" class="input-breast "></div>
+              <div class="col-md-12 col-xl-3"><div class="btn-breast">SEND NOW</div></div>
+              
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <div class="container pd-130">
+      <div class="row">
+        
+          <div class="col-12 col-md-6 col-xl-4 mb-5">
+            <div class="card" >
+              <img src="./home/buy1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Basic</h5>
+                <div class="card-title d-flex align-items-end">
+                  <div class="buy-price-swapper d-flex align-items-center">
+                    <span class="price-currency">$</span>
+                    <span class="price-value">390</span>
+                  </div>
+                  <span class="price-period">Monthly</span>
+                </div>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg "></i></span>Ut pharetra augue aliquet risus
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Mauris vitae turpis maximus,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Donec in neque tincidunt,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Vivamus efficitur dui a arcu
+                </p>
+                <a href="#" class="btn buttonBuy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4 mb-5">
+            <div class="card" >
+              <img src="./home/buy2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Professional</h5>
+                <div class="card-title d-flex align-items-end">
+                  <div class="buy-price-swapper d-flex align-items-center">
+                    <span class="price-currency">$</span>
+                    <span class="price-value">1290</span>
+                  </div>
+                  <span class="price-period">Monthly</span>
+                </div>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg "></i></span>Ut pharetra augue aliquet risus
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Mauris vitae turpis maximus,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Donec in neque tincidunt,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Vivamus efficitur dui a arcu
+                </p>
+                <a href="#" class="btn buttonBuy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-md-none d-xl-block col-xl-4 mb-5">
+            <div class="card" >
+              <img src="./home/buy3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Advanced</h5>
+                <div class="card-title d-flex align-items-end">
+                  <div class="buy-price-swapper d-flex align-items-center">
+                    <span class="price-currency">$</span>
+                    <span class="price-value">2590</span>
+                  </div>
+                  <span class="price-period">Monthly</span>
+                </div>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg "></i></span>Ut pharetra augue aliquet risus
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Mauris vitae turpis maximus,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Donec in neque tincidunt,
+                </p>
+                <p class="card-text gap-3 d-flex">
+                  <span><i class="bi bi-check-lg"></i></span>Vivamus efficitur dui a arcu
+                </p>
+                <a href="#" class="btn buttonBuy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+         
+
+         
+
+        
+
+      </div>
+    </div>
+
+
+
+
+      
+      <script type="module" src="./js/home.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
