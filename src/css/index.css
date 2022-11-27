@@ -241,6 +241,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #777;
+}
 .g-10 {
     gap: 10px;
 }
@@ -686,4 +693,94 @@
 .bg-facts {
     background-color: #F4F1EF;
     padding: 112px 0 120px 0;
+}
+
+/* Digit */
+
+.digit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 1;
+    color: #9e4b47;
+}
+.text-digit {
+    font-size: 12px;
+    line-height: 1.833em;
+    font-weight: 400;
+    color: #f7847e;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    margin: 0;
+}
+.content-digit {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #777;
+}
+
+/* footer */
+.textwidget {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+.logo-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+.logo-footer span {
+    color: #9e4b47;
+}
+.linkmail {
+    text-decoration: none;
+    color: #fff;
+}
+.linkmail:hover {
+    color: #fff;
+}
+
+.linktel {
+    text-decoration: none;
+    color: #fff;
+}
+.linktel:hover {
+    color: #fff;
+}
+.icon-media {
+    
+}
+.img-media {
+    border-radius: 100%;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #aba9a8;
+}
+.span-time {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.833em;
+    font-weight: 400;
+    color: #f7847e;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+.times {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.833em;
+    font-weight: 400;
+    color: #f7847e;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #aba9a8;
 }
