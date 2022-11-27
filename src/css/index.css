@@ -383,7 +383,7 @@
 }
 
 .mobile-banner {
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(./home/bannerreponsive1.jpg);
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../home/bannerreponsive1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
